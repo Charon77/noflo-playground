@@ -24,11 +24,13 @@ exports.getComponent = () => {
 	component,
 	{
 		in: ["ticker", "in"],
-		out: "out"
+		out: "out",
+		async: true
 	},
-	function(data, groups, outPort) {
+	function(data, groups, outPort, asyncDone) {
 		bitcoin.getPrice(data.ticker)
 		.then((lastPrice) => {
+			asyncDone();
 			return component.outPorts.out.send(lastPrice);			
 		})
 	}
