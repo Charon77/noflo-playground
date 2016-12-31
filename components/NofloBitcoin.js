@@ -29,9 +29,7 @@ exports.getComponent = () => {
 	function(data, groups, outPort) {
 		bitcoin.getPrice(data.ticker)
 		.then((lastPrice) => {
-			component.outPorts.out.send(lastPrice);
-			return component.outPorts.out.disconnect();
-			
+			return component.outPorts.out.send(lastPrice);			
 		})
 	}
   );
