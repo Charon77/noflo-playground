@@ -1,0 +1,17 @@
+{
+  "id": "e8542db5-78e6-4782-8a8d-115327edf09a",
+  "user": "acb6d608-7233-45fe-a705-170964eb0b9f",
+  "host": "192.168.232.1",
+  "port": 3569,
+  "secret": "UuwpWI8\"",
+  "permissions": {
+    "UuwpWI8\"": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
