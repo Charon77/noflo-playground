@@ -6,6 +6,7 @@
   "dependencies": {
     "noflo": "^0.7.9",
     "noflo-core": "^0.2.3",
+    "noflo-math": "0.0.9",
     "noflo-nodejs": "^0.7.2"
   },
   "devDependencies": {},
