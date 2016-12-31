@@ -21,16 +21,6 @@
                 "label": "Display"
             }
         },
-        "core/Repeat_8gnsp": {
-            "component": "core/Repeat",
-            "metadata": {
-                "label": "Repeat",
-                "x": -216,
-                "y": 0,
-                "width": 72,
-                "height": 72
-            }
-        },
         "playground/NofloBitcoin_bxjx8": {
             "component": "playground/NofloBitcoin",
             "metadata": {
@@ -40,22 +30,19 @@
                 "width": 72,
                 "height": 72
             }
+        },
+        "core/Repeat_8gnsp": {
+            "component": "core/Repeat",
+            "metadata": {
+                "label": "Repeat",
+                "x": -216,
+                "y": 0,
+                "width": 72,
+                "height": 72
+            }
         }
     },
     "connections": [
-        {
-            "src": {
-                "process": "core/Repeat_8gnsp",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "playground/NofloBitcoin_bxjx8",
-                "port": "in"
-            },
-            "metadata": {
-                "route": null
-            }
-        },
         {
             "src": {
                 "process": "playground/NofloBitcoin_bxjx8",
@@ -66,6 +53,16 @@
                 "port": "in"
             },
             "metadata": {}
+        },
+        {
+            "src": {
+                "process": "core/Repeat_8gnsp",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "playground/NofloBitcoin_bxjx8",
+                "port": "in"
+            }
         },
         {
             "data": "7",
