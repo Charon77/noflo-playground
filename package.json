@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "NoFlo Playground",
   "main": "index.js",
+  "noflo": {
+	  "components": {
+		"Uvuvwevwevwe": "./components/Uvuvwevwevwe.js"
+	  }
+	},
   "dependencies": {
     "noflo": "^0.7.9",
     "noflo-core": "^0.2.3",
