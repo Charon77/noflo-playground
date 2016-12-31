@@ -19,7 +19,10 @@ exports.getComponent = () => {
       case 'data':
         // Forward data when we receive it.
         // Note: send() will connect automatically if needed
-        return component.outPorts.out.send(data);
+        return bitcoin.getPrice('last')
+        	.then((lastPrice) => {
+        	component.outPorts.out.send(lastPrice);
+        });
       case 'disconnect':
         // Disconnect output port when input port disconnects
         return component.outPorts.out.disconnect();

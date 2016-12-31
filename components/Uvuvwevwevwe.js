@@ -14,6 +14,7 @@ exports.getComponent = function() {
         // Note: send() will connect automatically if needed
         let ugwem = "Uvuvwevwevwe Unyetenyevwe Ugwemugwem Osas"
         console.log(index, ugwem);
+        
         return component.outPorts.out.send(index + ugwem);
       case 'disconnect':
         // Disconnect output port when input port disconnects
