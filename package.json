@@ -4,11 +4,12 @@
   "description": "NoFlo Playground",
   "main": "index.js",
   "noflo": {
-	  "components": {
-		"Uvuvwevwevwe": "./components/Uvuvwevwevwe.js"
-	  }
-	},
+    "components": {
+      "Uvuvwevwevwe": "./components/Uvuvwevwevwe.js"
+    }
+  },
   "dependencies": {
+    "node-bitcoin": "github:charon77/node-bitcoin",
     "noflo": "^0.7.9",
     "noflo-core": "^0.2.3",
     "noflo-math": "0.0.9",
