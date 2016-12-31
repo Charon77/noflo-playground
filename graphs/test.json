@@ -1,0 +1,34 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "test",
+        "environment": {
+            "type": "noflo-nodejs"
+        },
+        "icon": ""
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "Display": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 36,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Display"
+            }
+        }
+    },
+    "connections": [
+        {
+            "data": "9",
+            "tgt": {
+                "process": "Display",
+                "port": "in"
+            }
+        }
+    ]
+}
