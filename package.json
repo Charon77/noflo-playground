@@ -1,0 +1,26 @@
+{
+  "name": "noflo-playground",
+  "version": "1.0.0",
+  "description": "NoFlo Playground",
+  "main": "index.js",
+  "dependencies": {
+    "noflo": "^0.7.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charon77/noflo-playground.git"
+  },
+  "keywords": [
+    "noflo"
+  ],
+  "author": "Evans Jahja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charon77/noflo-playground/issues"
+  },
+  "homepage": "https://github.com/charon77/noflo-playground#readme"
+}
