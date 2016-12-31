@@ -14,20 +14,164 @@
         "Display": {
             "component": "core/Output",
             "metadata": {
-                "x": 36,
+                "x": 288,
                 "y": 36,
                 "width": 72,
                 "height": 72,
                 "label": "Display"
             }
+        },
+        "core/Repeat_8gnsp": {
+            "component": "core/Repeat",
+            "metadata": {
+                "label": "Repeat",
+                "x": -288,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "playground/Uvuvwevwevwe_i4ty1": {
+            "component": "playground/Uvuvwevwevwe",
+            "metadata": {
+                "label": "Uvuvwevwevwe",
+                "x": 72,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Kick_7viwx": {
+            "component": "core/Kick",
+            "metadata": {
+                "label": "Kick",
+                "x": 72,
+                "y": -36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Split_8i1uq": {
+            "component": "core/Split",
+            "metadata": {
+                "label": "Split",
+                "x": -180,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "math/CountSum_6a4if": {
+            "component": "math/CountSum",
+            "metadata": {
+                "label": "CountSum",
+                "x": -72,
+                "y": 0,
+                "width": 72,
+                "height": 72
+            }
         }
     },
     "connections": [
         {
-            "data": "9",
+            "src": {
+                "process": "core/Repeat_8gnsp",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Split_8i1uq",
+                "port": "in"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "src": {
+                "process": "core/Repeat_8gnsp",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "math/CountSum_6a4if",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "core/Split_8i1uq",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "math/CountSum_6a4if",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "math/CountSum_6a4if",
+                "port": "out"
+            },
             "tgt": {
                 "process": "Display",
                 "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "math/CountSum_6a4if",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "playground/Uvuvwevwevwe_i4ty1",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "playground/Uvuvwevwevwe_i4ty1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Display",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "core/Split_8i1uq",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "playground/Uvuvwevwevwe_i4ty1",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "data": "7",
+            "tgt": {
+                "process": "core/Repeat_8gnsp",
+                "port": "in"
+            }
+        },
+        {
+            "data": "7",
+            "tgt": {
+                "process": "core/Kick_7viwx",
+                "port": "data"
             }
         }
     ]
