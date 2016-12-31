@@ -4,7 +4,9 @@
   "description": "NoFlo Playground",
   "main": "index.js",
   "dependencies": {
-    "noflo": "^0.7.9"
+    "noflo": "^0.7.9",
+    "noflo-core": "^0.2.3",
+    "noflo-nodejs": "^0.7.2"
   },
   "devDependencies": {},
   "scripts": {
